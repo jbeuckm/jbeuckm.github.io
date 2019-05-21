@@ -14,6 +14,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            date
+            tags
           }
         }
       }
