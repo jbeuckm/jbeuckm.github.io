@@ -7,7 +7,7 @@ export default forge({
   middleware: [EncodeJson],
   resources: {
     Post: {
-      list: { path: "/feed-1.json" }, // process.env.POSTS_ENDPOINT
+      list: { path: "/feed-1.json?z=" + Math.random() }, // process.env.POSTS_ENDPOINT
     },
   },
 })
