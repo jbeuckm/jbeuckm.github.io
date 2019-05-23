@@ -1,34 +1,11 @@
 import React from "react"
+import "./index.css"
+import App from "./App"
+import * as serviceWorker from "./serviceWorker"
 
-export default ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => (
-  <ul>
-    {edges.map(({ node }) => (
-      <li>
-        <h3>
-          <a href={node.frontmatter.path}>{node.frontmatter.title}</a>
-        </h3>
-      </li>
-    ))}
-  </ul>
-)
+export default () => <App />
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            path
-            date
-            tags
-          }
-        }
-      }
-    }
-  }
-`
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister()
