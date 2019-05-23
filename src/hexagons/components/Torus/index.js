@@ -1,13 +1,13 @@
-import BaseScene from './BaseScene'
-import * as THREE from 'three'
+import BaseScene from "./BaseScene"
+import * as THREE from "three"
 import {
   setTorusDimensions,
   projectOntoTorus,
   getHexagonGeometry,
   meshForGeometryAndImage,
-} from './utils'
-import blogClient from '../../clients/blog'
-import { flatten } from 'ramda'
+} from "./utils"
+import blogClient from "../../clients/blog"
+import { flatten } from "ramda"
 
 const R = 20
 const r = 4
@@ -33,7 +33,6 @@ class Torus extends BaseScene {
     this.cameraPosX = 0
     this.cameraPosY = 0
     this.cameraPosZ = 0
-    this.camera.position.set(this.cameraPosX, this.cameraPosY, this.cameraPosZ)
 
     this.positionTheta = Math.PI
     this.positionPhi = Math.PI
@@ -48,8 +47,6 @@ class Torus extends BaseScene {
       ArrowUp: () => (this.speedPhi += PHI_THROTTLE_DELTA),
       ArrowDown: () => (this.speedPhi -= PHI_THROTTLE_DELTA),
     }
-
-    this.camera.up.set(0, 1, 0)
   }
 
   handlePosts = items => {
@@ -61,7 +58,10 @@ class Torus extends BaseScene {
     // )
     const thumbnails = flatten(
       items.map(({ link, images }) =>
-        images.map(image => ({ link, image: 'https://jbeuckm.github.io' + image }))
+        images.map(image => ({
+          link,
+          image: "https://jbeuckm.github.io" + image,
+        }))
       )
     )
 
@@ -129,8 +129,15 @@ class Torus extends BaseScene {
 
       for (let theta = 0; theta < 2 * Math.PI; theta += 3 * thetaInterval) {
         this.hexagonCoords.push({ theta: thetaOffset + theta, phi })
-        const hexagon = getHexagonGeometry(thetaOffset + theta, phi, thetaSize, phiSize)
-        var hexagonLine = new THREE.LineSegments(new THREE.WireframeGeometry(hexagon))
+        const hexagon = getHexagonGeometry(
+          thetaOffset + theta,
+          phi,
+          thetaSize,
+          phiSize
+        )
+        var hexagonLine = new THREE.LineSegments(
+          new THREE.WireframeGeometry(hexagon)
+        )
         hexagonLine.material.depthTest = true
         hexagonLine.material.opacity = 1
         hexagonLine.material.transparent = true
@@ -166,6 +173,10 @@ class Torus extends BaseScene {
   }
 
   componentDidMount() {
+    super.componentDidMount()
+
+    this.camera.position.set(this.cameraPosX, this.cameraPosY, this.cameraPosZ)
+
     this.setupTorus()
   }
 }

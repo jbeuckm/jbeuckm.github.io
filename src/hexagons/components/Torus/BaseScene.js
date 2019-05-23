@@ -1,5 +1,5 @@
-import { Component } from 'react'
-import * as THREE from 'three'
+import { Component } from "react"
+import * as THREE from "three"
 
 const CAMERA_SPEED_FRICTION = 0.08
 
@@ -7,14 +7,6 @@ class BaseScene extends Component {
   constructor(props) {
     super(props)
 
-    const { innerWidth: width, innerHeight: height } = window
-
-    let fov = 60
-    let near = 1
-    this.far = 10
-
-    // Set up camera and scene
-    this.camera = new THREE.PerspectiveCamera(fov, width / height, near, this.far)
     this.cameraPosX = 0
     this.cameraPosY = 0
     this.cameraPosZ = 10
@@ -24,23 +16,38 @@ class BaseScene extends Component {
 
     this.raycaster = new THREE.Raycaster()
 
-    // Add canvas
-    this.renderer = new THREE.WebGLRenderer()
-    this.renderer.setSize(width, height)
-    document.body.appendChild(this.renderer.domElement)
-
-    //    this.camera.position.set(0, 0, far)
-
-    this.scene = new THREE.Scene()
-
     this.position = 0
-
-    window.addEventListener('resize', this.onDocumentResize)
-    document.addEventListener('mousedown', this.onDocumentMouseDown, false)
-    document.addEventListener('keydown', this.onDocumentKeyDown)
 
     this.meshObjects = []
     this.keyHandler = {}
+  }
+
+  componentDidMount() {
+    const { innerWidth: width, innerHeight: height } = window
+
+    // Add canvas
+    this.renderer = new THREE.WebGLRenderer()
+    document.body.appendChild(this.renderer.domElement)
+
+    this.scene = new THREE.Scene()
+
+    this.renderer.setSize(width, height)
+
+    let fov = 60
+    let near = 1
+    this.far = 10
+
+    // Set up camera and scene
+    this.camera = new THREE.PerspectiveCamera(
+      fov,
+      width / height,
+      near,
+      this.far
+    )
+
+    window.addEventListener("resize", this.onDocumentResize)
+    document.addEventListener("mousedown", this.onDocumentMouseDown, false)
+    document.addEventListener("keydown", this.onDocumentKeyDown)
   }
 
   onDocumentKeyDown = event => {

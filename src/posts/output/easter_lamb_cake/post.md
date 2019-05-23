@@ -1,0 +1,37 @@
+---
+path: "/easter_lamb_cake"
+title: "Easter Lamb Cake"
+date: "2009-04-12"
+tags: ["america","artwork","cake"]
+hexagonImages: ["dsc03479.jpeg_hexagon.jpeg","dsc03477-300x225.jpg_hexagon.jpeg","dsc03478-300x225.jpg_hexagon.jpeg","dsc03479-300x225.jpg_hexagon.jpeg","dsc03480-300x225.jpg_hexagon.jpeg","dsc03481-300x225.jpg_hexagon.jpeg","dsc03482-300x225.jpg_hexagon.jpeg","dsc03484-300x225.jpg_hexagon.jpeg","dsc03477.jpg_hexagon.jpeg","dsc03478.jpg_hexagon.jpeg","dsc03479.jpg_hexagon.jpeg","dsc03480.jpg_hexagon.jpeg","dsc03481.jpg_hexagon.jpeg","dsc03482.jpg_hexagon.jpeg","dsc03484.jpg_hexagon.jpeg"]
+---
+
+ [![](dsc03479.jpeg)](dsc03479.jpeg)
+
+Grandma Beuckman made a lamb cake every Easter growing up, so I laughed a bit when Lauren's mom produced their iron lamb cake mold. She gave it to Lauren (wizard of desserts) to try this year and I think we restarted their tradition today. An attempt yesterday afternoon failed miserably so I decided to document today's go in case we got it right. And we did, somewhat. \[caption id="attachment\_304" align="alignnone" width="300" caption="All criscoed up and floured"\] [![All criscoed up and floured](dsc03477-300x225.jpg "dsc03477")](dsc03477.jpg) \[/caption\] \[caption id="attachment\_300" align="alignnone" width="300" caption="Batter up."\] [![Batter up.](dsc03478-300x225.jpg "dsc03478")](dsc03478.jpg) \[/caption\] \[caption id="attachment\_306" align="alignnone" width="300" caption="No face? More batter in the head next year..."\] [![No face?  More batter in the head next year...](dsc03479-300x225.jpg "dsc03479")](dsc03479.jpg) \[/caption\] \[caption id="attachment\_305" align="alignnone" width="300" caption="We decided the outside of the mold looks more like a lamb. The inside shape is creepy. But it stands!"\] [![We decided the outside of the mold looks more like a lamb.  The inside shape is creepy.  But it stands!](dsc03480-300x225.jpg "dsc03480")](dsc03480.jpg) \[/caption\] \[caption id="attachment\_302" align="alignnone" width="300" caption="7-minute frosting was difficult to control but light enough not to pose much risk of further damage to the lambage and also great for the facial reconstructive surgery."\] [![7-minute frosting was difficult to control but light enough not to pose much risk of further damage to the lambage and also great for the facial reconstructive surgery.  Two ear toothpicks and a neck skewer = so necessary.](dsc03481-300x225.jpg "dsc03481")](dsc03481.jpg) \[/caption\] \[caption id="attachment\_301" align="alignnone" width="300" caption="Careful not to get green on the white!"\] [![Careful not to get green on the white!](dsc03482-300x225.jpg "dsc03482")](dsc03482.jpg) \[/caption\] \[caption id="attachment\_303" align="alignnone" width="300" caption="Baaa"\] [![Baaa](dsc03484-300x225.jpg "dsc03484")](dsc03484.jpg) \[/caption\] 16 
+  <!---
+  <div class="field field-type-filefield field-field-images" xmlns="http://www.w3.org/1999/xhtml">
+      
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.beigerecords.com/joe-old/sites/default/files/dsc03479.jpeg" class="imagecache imagecache-square_thumbnail imagecache-imagelink imagecache-square_thumbnail_imagelink"><img src="http://www.beigerecords.com/joe-old/sites/default/files/imagecache/square_thumbnail/dsc03479.jpeg" alt="" title="" width="300" height="300" class="imagecache imagecache-square_thumbnail"/></a>        </div>
+        </div>
+</div> 
+Grandma Beuckman made a lamb cake every Easter growing up, so I laughed a bit when Lauren's mom produced their iron lamb cake mold.  She gave it to Lauren (wizard of desserts) to try this year and I think we restarted their tradition today.  An attempt yesterday afternoon failed miserably so I decided to document today's go in case we got it right.  And we did, somewhat.
+
+[caption id="attachment_304" align="alignnone" width="300" caption="All criscoed up and floured"] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03477.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03477-300x225.jpg" alt="All criscoed up and floured" title="dsc03477" width="300" height="225" class="size-medium wp-image-304"/></a> [/caption]
+
+[caption id="attachment_300" align="alignnone" width="300" caption="Batter up."] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03478.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03478-300x225.jpg" alt="Batter up." title="dsc03478" width="300" height="225" class="size-medium wp-image-300"/></a> [/caption]
+
+[caption id="attachment_306" align="alignnone" width="300" caption="No face?  More batter in the head next year..."] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03479.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03479-300x225.jpg" alt="No face?  More batter in the head next year..." title="dsc03479" width="300" height="225" class="size-medium wp-image-306"/></a> [/caption]
+
+[caption id="attachment_305" align="alignnone" width="300" caption="We decided the outside of the mold looks more like a lamb.  The inside shape is creepy.  But it stands!"] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03480.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03480-300x225.jpg" alt="We decided the outside of the mold looks more like a lamb.  The inside shape is creepy.  But it stands!" title="dsc03480" width="300" height="225" class="size-medium wp-image-305"/></a> [/caption]
+
+[caption id="attachment_302" align="alignnone" width="300" caption="7-minute frosting was difficult to control but light enough not to pose much risk of further damage to the lambage and also great for the facial reconstructive surgery."] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03481.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03481-300x225.jpg" alt="7-minute frosting was difficult to control but light enough not to pose much risk of further damage to the lambage and also great for the facial reconstructive surgery.  Two ear toothpicks and a neck skewer = so necessary." title="dsc03481" width="300" height="225" class="size-medium wp-image-302"/></a> [/caption]
+
+[caption id="attachment_301" align="alignnone" width="300" caption="Careful not to get green on the white!"] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03482.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03482-300x225.jpg" alt="Careful not to get green on the white!" title="dsc03482" width="300" height="225" class="size-medium wp-image-301"/></a> [/caption]
+
+[caption id="attachment_303" align="alignnone" width="300" caption="Baaa"] <a href="http://www.beigerecords.com/joe/wp-content/uploads/2009/04/dsc03484.jpg" xmlns="http://www.w3.org/1999/xhtml"><img src="/joe/newdrupal/sites/default/files/images/dsc03484-300x225.jpg" alt="Baaa" title="dsc03484" width="300" height="225" class="size-medium wp-image-303"/></a> [/caption]
+
+ 16
+  --->
