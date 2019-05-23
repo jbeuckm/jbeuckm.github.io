@@ -3,7 +3,7 @@ path: "/supporting_a_2w_laser_diode"
 title: "Supporting a 2W Laser Diode"
 date: "2009-08-06"
 tags: ["artwork","electronics","laser"]
-hexagonImages: ["dsc03544.jpeg_hexagon.jpeg","dsc03544-300x225.jpg_hexagon.jpeg","dsc03544.jpg_hexagon.jpeg"]
+hexagonImages: ["dsc03544-300x225.jpg_hexagon.jpeg","dsc03544.jpg_hexagon.jpeg"]
 ---
 
  [![](dsc03544.jpeg)](dsc03544.jpeg)

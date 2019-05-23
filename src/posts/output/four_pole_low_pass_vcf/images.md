@@ -4,6 +4,18 @@ title: "Four Pole Low Pass VCF (images)"
 date: "2007-10-06"
 tags: ["electronics","synthesizer"]
 sourcePath: "/four_pole_low_pass_vcf"
+failedDownloads: []
 ---
 
- ![4plpf_board.jpeg_hexagon.jpeg](4plpf_board.jpeg_hexagon.jpeg) ![4plpf_board-300x225.jpg_hexagon.jpeg](4plpf_board-300x225.jpg_hexagon.jpeg) ![4plpf_front-221x300.jpg_hexagon.jpeg](4plpf_front-221x300.jpg_hexagon.jpeg) ![4plpf_board.jpg_hexagon.jpeg](4plpf_board.jpg_hexagon.jpeg) ![4plpf_front.jpg_hexagon.jpeg](4plpf_front.jpg_hexagon.jpeg)
+
+### Failed downloads:
+
+### Failed hexagons:
+* http://www.beigerecords.com/joe-old/sites/default/files/js/js_31b13ff6f9c0876c48173c60d425fc8f.js
+
+### Hexagons images:
+![4plpf_board.jpeg_hexagon.jpeg](4plpf_board.jpeg_hexagon.jpeg)
+ ![4plpf_board-300x225.jpg_hexagon.jpeg](4plpf_board-300x225.jpg_hexagon.jpeg)
+ ![4plpf_front-221x300.jpg_hexagon.jpeg](4plpf_front-221x300.jpg_hexagon.jpeg)
+ ![4plpf_board.jpg_hexagon.jpeg](4plpf_board.jpg_hexagon.jpeg)
+ ![4plpf_front.jpg_hexagon.jpeg](4plpf_front.jpg_hexagon.jpeg)

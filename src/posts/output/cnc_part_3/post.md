@@ -3,7 +3,7 @@ path: "/cnc_part_3"
 title: "CNC Part 3"
 date: "2011-01-05"
 tags: ["CNC"]
-hexagonImages: ["dsc04052.jpeg_hexagon.jpeg","dsc04049-300x225.jpg_hexagon.jpeg","dsc04051-225x300.jpg_hexagon.jpeg","dsc04052-300x225.jpg_hexagon.jpeg","dsc04049.jpg_hexagon.jpeg","dsc04051.jpg_hexagon.jpeg","dsc04052.jpg_hexagon.jpeg"]
+hexagonImages: ["dsc04049-300x225.jpg_hexagon.jpeg","dsc04051-225x300.jpg_hexagon.jpeg","dsc04052-300x225.jpg_hexagon.jpeg","dsc04049.jpg_hexagon.jpeg","dsc04051.jpg_hexagon.jpeg","dsc04052.jpg_hexagon.jpeg"]
 ---
 
  [![](dsc04052.jpeg)](dsc04052.jpeg)

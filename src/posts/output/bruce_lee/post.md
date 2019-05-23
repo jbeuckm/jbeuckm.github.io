@@ -3,7 +3,7 @@ path: "/bruce_lee"
 title: "Bruce Lee"
 date: "2001-03-21"
 tags: ["beadwork","c64"]
-hexagonImages: ["bruce.jpg_hexagon.jpeg","ninja.jpg_hexagon.jpeg","kick-300x122.jpg_hexagon.jpeg","fall-300x81.jpg_hexagon.jpeg","kick.jpg_hexagon.jpeg","fall.jpg_hexagon.jpeg"]
+hexagonImages: ["bruce.jpeg_hexagon.jpeg","bruce.jpg_hexagon.jpeg","ninja.jpg_hexagon.jpeg","kick-300x122.jpg_hexagon.jpeg","fall-300x81.jpg_hexagon.jpeg","kick.jpg_hexagon.jpeg","fall.jpg_hexagon.jpeg"]
 ---
 
  [![](bruce.jpeg)](bruce.jpeg)

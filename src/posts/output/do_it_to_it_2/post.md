@@ -3,7 +3,7 @@ path: "/do_it_to_it_2"
 title: "Do It To It 2"
 date: "2009-03-03"
 tags: ["burlesque","cna","mike 2600","music","wizard of gaz"]
-hexagonImages: ["diti2-297x300.jpg_hexagon.jpeg","diti2.jpg_hexagon.jpeg"]
+hexagonImages: ["diti2.jpeg_hexagon.jpeg","diti2-297x300.jpg_hexagon.jpeg","diti2.jpg_hexagon.jpeg"]
 ---
 
  [![](diti2.jpeg)](diti2.jpeg)

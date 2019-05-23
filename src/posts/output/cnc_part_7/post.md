@@ -3,10 +3,10 @@ path: "/cnc_part_7"
 title: "CNC Part 7"
 date: "2011-06-01"
 tags: ["CNC","video"]
-hexagonImages: ["Screen%20shot%202011-07-20%20at%2011.38.21%20PM.png_hexagon.png"]
+hexagonImages: []
 ---
 
- [![](Screen%20shot%202011-07-20%20at%2011.38.21%20PM.png)](Screen%20shot%202011-07-20%20at%2011.38.21%20PM.png)
+ [![](undefined)](Screen%20shot%202011-07-20%20at%2011.38.21%20PM.png)
 
 The rest of my 80/20 arrived at John Henry Foster and I picked it up. The X-axis is aligned and slides easily and smoothly by hand. So I tightened down the acme nut and bearing blocks at each end and chucked an inch of 1/4" rod in my drill to try it out. Really difficult to not put the remaining parts and electronics on credit cards now. 4 
   <!---

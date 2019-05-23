@@ -4,6 +4,15 @@ title: "Contemporary Native American 40 (images)"
 date: "2003-11-28"
 tags: ["beadwork","cna","kente-cloth"]
 sourcePath: "/contemporary_native_american_40"
+failedDownloads: []
 ---
 
- ![cna_40-300x143.jpg_hexagon.jpeg](cna_40-300x143.jpg_hexagon.jpeg) ![cna_40.jpg_hexagon.jpeg](cna_40.jpg_hexagon.jpeg)
+
+### Failed downloads:
+
+### Failed hexagons:
+
+### Hexagons images:
+![cna_40.jpeg_hexagon.jpeg](cna_40.jpeg_hexagon.jpeg)
+ ![cna_40-300x143.jpg_hexagon.jpeg](cna_40-300x143.jpg_hexagon.jpeg)
+ ![cna_40.jpg_hexagon.jpeg](cna_40.jpg_hexagon.jpeg)

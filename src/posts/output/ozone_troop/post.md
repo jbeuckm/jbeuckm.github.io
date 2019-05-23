@@ -3,7 +3,7 @@ path: "/ozone_troop"
 title: "Ozone Troop"
 date: "1996-11-28"
 tags: ["music","ozone-troop"]
-hexagonImages: ["ozone_tape.jpg_hexagon.jpeg"]
+hexagonImages: ["ozone_tape.jpeg_hexagon.jpeg","ozone_tape.jpg_hexagon.jpeg"]
 ---
 
  [![](ozone_tape.jpeg)](ozone_tape.jpeg)

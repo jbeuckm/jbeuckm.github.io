@@ -3,7 +3,7 @@ path: "/workbench_part_5"
 title: "Workbench Part 5"
 date: "2012-07-19"
 tags: ["artwork","house"]
-hexagonImages: ["DSC04458.JPG_hexagon.jpeg"]
+hexagonImages: []
 ---
 
  [![](DSC04458.JPG)](DSC04458.JPG)

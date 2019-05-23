@@ -3,7 +3,7 @@ path: "/prototyping_station"
 title: "Prototyping Station"
 date: "2010-06-06"
 tags: ["Uncategorized"]
-hexagonImages: ["Screen%20shot%202011-07-21%20at%2012.39.18%20AM.png_hexagon.png"]
+hexagonImages: []
 ---
 
  [![](Screen%20shot%202011-07-21%20at%2012.39.18%20AM.png)](Screen%20shot%202011-07-21%20at%2012.39.18%20AM.png)

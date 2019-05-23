@@ -4,6 +4,13 @@ title: "Automatic Closet LEDs (images)"
 date: "2009-12-20"
 tags: ["america","electronics","house"]
 sourcePath: "/automatic_closet_leds"
+failedDownloads: []
 ---
 
- ![closet_light.gif_hexagon.png](closet_light.gif_hexagon.png)
+
+### Failed downloads:
+
+### Failed hexagons:
+
+### Hexagons images:
+![closet_light.gif_hexagon.png](closet_light.gif_hexagon.png)

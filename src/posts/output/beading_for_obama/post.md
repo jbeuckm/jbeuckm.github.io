@@ -3,7 +3,7 @@ path: "/beading_for_obama"
 title: "Beading for Obama"
 date: "2008-09-23"
 tags: ["beadwork","cna","obama","wizard of gaz"]
-hexagonImages: ["obama_beads.png_hexagon.png"]
+hexagonImages: []
 ---
 
  [![](obama_beads.png)](obama_beads.png)

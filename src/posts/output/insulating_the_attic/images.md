@@ -4,6 +4,13 @@ title: "Insulating the Attic (images)"
 date: "2011-02-06"
 tags: ["house"]
 sourcePath: "/insulating_the_attic"
+failedDownloads: []
 ---
 
- ![dsc04060.jpeg_hexagon.jpeg](dsc04060.jpeg_hexagon.jpeg)
+
+### Failed downloads:
+
+### Failed hexagons:
+
+### Hexagons images:
+![dsc04060.jpeg_hexagon.jpeg](dsc04060.jpeg_hexagon.jpeg)

@@ -3,7 +3,7 @@ path: "/mandelbrot_2009"
 title: "Mandelbrot 2009"
 date: "2009-09-21"
 tags: []
-hexagonImages: []
+hexagonImages: ["Screen%20shot%202011-07-21%20at%205.22.43%20PM.png_hexagon.png"]
 ---
 
  [![](Screen%20shot%202011-07-21%20at%205.22.43%20PM.png)](Screen%20shot%202011-07-21%20at%205.22.43%20PM.png)

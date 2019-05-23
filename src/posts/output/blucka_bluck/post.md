@@ -3,7 +3,7 @@ path: "/blucka_bluck"
 title: "Blucka Bluck"
 date: "2003-11-28"
 tags: ["6502","beadwork","cna"]
-hexagonImages: ["blank-300x77.gif_hexagon.png","blucka_ani.gif_hexagon.png","finished_1.jpg_hexagon.jpeg","finished_2.jpg_hexagon.jpeg","finished_3.jpg_hexagon.jpeg","blank.gif_hexagon.png"]
+hexagonImages: ["finished_2.jpeg_hexagon.jpeg","blank-300x77.gif_hexagon.png","blucka_ani.gif_hexagon.png","finished_1.jpg_hexagon.jpeg","finished_2.jpg_hexagon.jpeg","finished_3.jpg_hexagon.jpeg","blank.gif_hexagon.png"]
 ---
 
  [![](finished_2.jpeg)](finished_2.jpeg)

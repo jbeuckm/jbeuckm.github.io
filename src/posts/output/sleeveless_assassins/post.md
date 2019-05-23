@@ -3,7 +3,7 @@ path: "/sleeveless_assassins"
 title: "Sleeveless Assassins"
 date: "2001-06-29"
 tags: ["flash","music","st-louis"]
-hexagonImages: []
+hexagonImages: ["Screen%20shot%202011-07-21%20at%201.54.25%20AM.png_hexagon.png"]
 ---
 
  [![](Screen%20shot%202011-07-21%20at%201.54.25%20AM.png)](Screen%20shot%202011-07-21%20at%201.54.25%20AM.png)

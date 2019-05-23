@@ -3,7 +3,7 @@ path: "/new_spaceship"
 title: "New Spaceship"
 date: "2009-05-06"
 tags: ["music","news"]
-hexagonImages: ["dsc034861.jpeg_hexagon.jpeg","dsc034861-768x1024.jpg_hexagon.jpeg","dsc03487-1024x768.jpg_hexagon.jpeg","dsc034861.jpg_hexagon.jpeg","dsc03487.jpg_hexagon.jpeg"]
+hexagonImages: ["dsc034861-768x1024.jpg_hexagon.jpeg","dsc03487-1024x768.jpg_hexagon.jpeg","dsc034861.jpg_hexagon.jpeg","dsc03487.jpg_hexagon.jpeg"]
 ---
 
  [![](dsc034861.jpeg)](dsc034861.jpeg)

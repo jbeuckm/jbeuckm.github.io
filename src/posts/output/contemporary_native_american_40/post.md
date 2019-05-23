@@ -3,7 +3,7 @@ path: "/contemporary_native_american_40"
 title: "Contemporary Native American 40"
 date: "2003-11-28"
 tags: ["beadwork","cna","kente-cloth"]
-hexagonImages: ["cna_40-300x143.jpg_hexagon.jpeg","cna_40.jpg_hexagon.jpeg"]
+hexagonImages: ["cna_40.jpeg_hexagon.jpeg","cna_40-300x143.jpg_hexagon.jpeg","cna_40.jpg_hexagon.jpeg"]
 ---
 
  [![](cna_40.jpeg)](cna_40.jpeg)

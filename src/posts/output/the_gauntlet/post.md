@@ -3,7 +3,7 @@ path: "/the_gauntlet"
 title: "The Gauntlet"
 date: "2003-11-28"
 tags: ["aztec-challenge","beadwork","c64"]
-hexagonImages: ["gauntlet_color.jpg_hexagon.jpeg"]
+hexagonImages: ["gauntlet_color.jpeg_hexagon.jpeg","gauntlet_color.jpg_hexagon.jpeg"]
 ---
 
  [![](gauntlet_color.jpeg)](gauntlet_color.jpeg)
