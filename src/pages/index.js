@@ -1,7 +1,7 @@
 import React from "react"
-import "./index.css"
-import App from "./App"
-import * as serviceWorker from "./serviceWorker"
+import "../hexagons/index.css"
+import App from "../hexagons/App"
+import * as serviceWorker from "../hexagons/serviceWorker"
 
 export default () => <App />
 
