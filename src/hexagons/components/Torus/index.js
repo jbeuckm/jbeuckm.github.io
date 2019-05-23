@@ -60,7 +60,7 @@ class Torus extends BaseScene {
       items.map(({ link, images }) =>
         images.map(image => ({
           link,
-          image: "https://jbeuckm.github.io" + image,
+          image: image,
         }))
       )
     )

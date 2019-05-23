@@ -98,12 +98,23 @@ module.exports = {
 }
 
 const imagesFromAst = htmlAst => {
+  const findImageTags = node => {
+    if (node.children) {
+      const myTags = node.children.filter(propEq("tagName", "img"))
+      const childrensTags = node.children.map(findImageTags)
+
+      return [...myTags, ...flatten(childrensTags)]
+    } else {
+      return []
+    }
+  }
+
   try {
-    const imageElements = htmlAst.children[0].children.filter(
-      propEq("tagName", "img")
-    )
+    const imageElements = findImageTags(htmlAst)
+    console.log({ imageElements })
     return imageElements
   } catch (error) {
+    console.log(error)
     return []
   }
 }

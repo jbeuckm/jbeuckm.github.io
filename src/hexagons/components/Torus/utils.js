@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from "three"
 
 export const getUnitHexagon2d = () => {
   const points = []
@@ -13,10 +13,19 @@ const unitHexagon = getUnitHexagon2d()
 
 export const projectOntoTorus = (theta, phi) => {
   const major = R + r * Math.cos(phi)
-  return new THREE.Vector3(major * Math.cos(theta), r * Math.sin(phi), major * Math.sin(theta))
+  return new THREE.Vector3(
+    major * Math.cos(theta),
+    r * Math.sin(phi),
+    major * Math.sin(theta)
+  )
 }
 
-export const getHexagonGeometry = (positionTheta, positionPhi, sizeTheta, sizePhi) => {
+export const getHexagonGeometry = (
+  positionTheta,
+  positionPhi,
+  sizeTheta,
+  sizePhi
+) => {
   const geom = new THREE.Geometry()
 
   geom.vertices.push(projectOntoTorus(positionTheta, positionPhi))
@@ -25,7 +34,10 @@ export const getHexagonGeometry = (positionTheta, positionPhi, sizeTheta, sizePh
 
   unitHexagon.forEach(vertex => {
     geom.vertices.push(
-      projectOntoTorus(positionTheta + sizeTheta * vertex.x, positionPhi + sizePhi * vertex.y)
+      projectOntoTorus(
+        positionTheta + sizeTheta * vertex.x,
+        positionPhi + sizePhi * vertex.y
+      )
     )
     uvs.push(new THREE.Vector2(0.5 + 0.5 * vertex.x, 0.5 - 0.5 * vertex.y))
   })
@@ -75,5 +87,9 @@ export const setTorusDimensions = (_R, _r) => {
 
 export const projectVectorOntoTorus = vec => {
   const major = R + r * Math.cos(vec.y)
-  return new THREE.Vector3(major * Math.cos(vec.x), r * Math.sin(vec.y), major * Math.sin(vec.x))
+  return new THREE.Vector3(
+    major * Math.cos(vec.x),
+    r * Math.sin(vec.y),
+    major * Math.sin(vec.x)
+  )
 }
