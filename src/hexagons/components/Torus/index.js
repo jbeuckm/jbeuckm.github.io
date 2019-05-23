@@ -12,11 +12,11 @@ import { flatten } from "ramda"
 const R = 20
 const r = 4
 const CAMERA_SPEED_FRICTION = 0.08
-const PHI_THROTTLE_DELTA = -0.02
-const THETA_THROTTLE_DELTA = -0.01
+const PHI_THROTTLE_DELTA = 0.01
+const THETA_THROTTLE_DELTA = 0.005
 
-const thetaSplit = 180 // divisible by three seems nice
-const phiSplit = 40 // even
+const thetaSplit = 210 // divisible by three seems nice
+const phiSplit = 60 // even
 
 const thetaInterval = (2 * Math.PI) / thetaSplit
 const phiInterval = (2 * Math.PI) / phiSplit
@@ -40,22 +40,31 @@ class Torus extends BaseScene {
     this.speedTheta = 0
     this.speedPhi = 0
 
-    this.keyHandler = {
-      ArrowRight: () => (this.speedTheta += THETA_THROTTLE_DELTA),
-      ArrowLeft: () => (this.speedTheta -= THETA_THROTTLE_DELTA),
+    this.baseSpeedPhi = 0.001
+    this.baseSpeedTheta = 0.0003
 
-      ArrowUp: () => (this.speedPhi += PHI_THROTTLE_DELTA),
-      ArrowDown: () => (this.speedPhi -= PHI_THROTTLE_DELTA),
+    this.keyHandler = {
+      ArrowRight: () => {
+        this.baseSpeedTheta = -0.0003
+        this.speedTheta -= THETA_THROTTLE_DELTA
+      },
+      ArrowLeft: () => {
+        this.baseSpeedTheta = 0.0003
+        this.speedTheta += THETA_THROTTLE_DELTA
+      },
+
+      ArrowUp: () => {
+        this.baseSpeedPhi = -0.001
+        this.speedPhi -= PHI_THROTTLE_DELTA
+      },
+      ArrowDown: () => {
+        this.baseSpeedPhi = 0.001
+        this.speedPhi += PHI_THROTTLE_DELTA
+      },
     }
   }
 
   handlePosts = items => {
-    console.log({ items })
-    // const thumbnails = flatten(
-    //   posts.map(({ id: postId, files }) =>
-    //     files.map(({ id: fileId }) => ({ postId, fileId })).shift()
-    //   )
-    // )
     const thumbnails = flatten(
       items.map(({ link, images }) =>
         images.map(image => ({
@@ -68,19 +77,27 @@ class Torus extends BaseScene {
     const thetaSize = this.getThetaSize()
     const phiSize = this.getPhiSize()
 
-    console.log({ thumbnails })
-    thumbnails.forEach((thumbnail, index) => {
-      if (!thumbnail) return
-      const url = thumbnail.image
-      const coords = this.hexagonCoords[index]
+    thumbnails
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .concat(thumbnails)
+      .forEach((thumbnail, index) => {
+        if (!thumbnail) return
+        const url = thumbnail.image
+        const coords = this.hexagonCoords[index]
 
-      const mesh = meshForGeometryAndImage(
-        getHexagonGeometry(coords.theta, coords.phi, thetaSize, phiSize),
-        url,
-        this.renderer
-      )
-      this.thetaGroup.add(mesh)
-    })
+        const mesh = meshForGeometryAndImage(
+          getHexagonGeometry(coords.theta, coords.phi, thetaSize, phiSize),
+          url,
+          this.renderer
+        )
+        this.thetaGroup.add(mesh)
+      })
   }
 
   getThetaSize = () => {
@@ -152,7 +169,7 @@ class Torus extends BaseScene {
       this.handlePosts(items)
     })
 
-    this.thetaGroup.position.z = -R
+    this.thetaGroup.position.z = -0.95 * R
 
     this.phiGroup.add(this.thetaGroup)
 
@@ -165,8 +182,8 @@ class Torus extends BaseScene {
     this.speedTheta *= 1.0 - CAMERA_SPEED_FRICTION
     this.speedPhi *= 1.0 - CAMERA_SPEED_FRICTION
 
-    this.positionPhi += this.speedPhi
-    this.positionTheta += this.speedTheta
+    this.positionPhi += this.baseSpeedPhi + this.speedPhi
+    this.positionTheta += this.baseSpeedTheta + this.speedTheta
 
     this.thetaGroup.rotation.y = this.positionTheta
     this.phiGroup.rotation.x = this.positionPhi
