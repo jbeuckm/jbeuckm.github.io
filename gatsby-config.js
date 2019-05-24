@@ -111,7 +111,6 @@ const imagesFromAst = htmlAst => {
 
   try {
     const imageElements = findImageTags(htmlAst)
-    console.log({ imageElements })
     return imageElements
   } catch (error) {
     console.log(error)
