@@ -39,7 +39,7 @@ export const getHexagonGeometry = (
         positionPhi + sizePhi * vertex.y
       )
     )
-    uvs.push(new THREE.Vector2(0.5 + 0.5 * vertex.x, 0.5 - 0.5 * vertex.y))
+    uvs.push(new THREE.Vector2(0.5 - 0.5 * vertex.x, 0.5 - 0.5 * vertex.y))
   })
 
   for (let i = 1; i <= 6; i++) {
