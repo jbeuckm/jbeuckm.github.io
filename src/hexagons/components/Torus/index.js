@@ -77,27 +77,18 @@ class Torus extends BaseScene {
     const thetaSize = this.getThetaSize()
     const phiSize = this.getPhiSize()
 
-    thumbnails
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .concat(thumbnails)
-      .forEach((thumbnail, index) => {
-        if (!thumbnail) return
-        const url = thumbnail.image
-        const coords = this.hexagonCoords[index]
+    thumbnails.forEach((thumbnail, index) => {
+      if (!thumbnail) return
+      const url = thumbnail.image
+      const coords = this.hexagonCoords[index]
 
-        const mesh = meshForGeometryAndImage(
-          getHexagonGeometry(coords.theta, coords.phi, thetaSize, phiSize),
-          url,
-          this.renderer
-        )
-        this.thetaGroup.add(mesh)
-      })
+      const mesh = meshForGeometryAndImage(
+        getHexagonGeometry(coords.theta, coords.phi, thetaSize, phiSize),
+        url,
+        this.renderer
+      )
+      this.thetaGroup.add(mesh)
+    })
   }
 
   getThetaSize = () => {

@@ -1,5 +1,5 @@
 import React from "react"
 import "../hexagons/index.css"
-import App from "../hexagons/App"
+import TorusTiledWithHexagonImages from "../hexagons/App"
 
-export default () => <App />
+export default () => <TorusTiledWithHexagonImages />
