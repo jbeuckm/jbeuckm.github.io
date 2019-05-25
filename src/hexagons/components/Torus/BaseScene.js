@@ -1,5 +1,6 @@
 import { Component } from "react"
 import * as THREE from "three"
+import Hammer from "hammerjs"
 
 const CAMERA_SPEED_FRICTION = 0.08
 
@@ -20,6 +21,7 @@ class BaseScene extends Component {
 
     this.meshObjects = []
     this.keyHandler = {}
+    this.swipeHandler = () => {}
   }
 
   componentDidMount() {
@@ -48,6 +50,12 @@ class BaseScene extends Component {
     window.addEventListener("resize", this.onDocumentResize)
     document.addEventListener("mousedown", this.onDocumentMouseDown, false)
     document.addEventListener("keydown", this.onDocumentKeyDown)
+
+    var manager = new Hammer.Manager(this.renderer.domElement)
+    var Swipe = new Hammer.Swipe()
+    manager.add(Swipe)
+
+    manager.on("swipe", this.swipeHandler)
   }
 
   onDocumentKeyDown = event => {

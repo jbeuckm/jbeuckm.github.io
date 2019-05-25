@@ -64,6 +64,11 @@ class Torus extends BaseScene {
     }
   }
 
+  swipeHandler = event => {
+    console.log(event)
+    this.speedTheta += 0.01 * event.overallVelocityX
+  }
+
   handlePosts = items => {
     const thumbnails = flatten(
       items.map(({ link, images }) =>
