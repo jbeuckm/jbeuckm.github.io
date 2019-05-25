@@ -11,7 +11,7 @@ import { flatten } from "ramda"
 
 const R = 20
 const r = 4
-const CAMERA_SPEED_FRICTION = 0.08
+const CAMERA_SPEED_FRICTION = 0.05
 const PHI_THROTTLE_DELTA = 0.01
 const THETA_THROTTLE_DELTA = 0.005
 
@@ -38,7 +38,7 @@ class Torus extends BaseScene {
     this.positionTheta = Math.PI
     this.positionPhi = Math.PI + 0.1
 
-    this.speedTheta = 0
+    this.speedTheta = 0.005
     this.speedPhi = 0
 
     this.baseSpeedPhi = 0.001
@@ -156,7 +156,7 @@ class Torus extends BaseScene {
         hexagonLine.material.opacity = 1
         hexagonLine.material.transparent = true
 
-        //        this.thetaGroup.add(hexagonLine)
+        //this.thetaGroup.add(hexagonLine)
       }
     }
 
@@ -195,8 +195,8 @@ class Torus extends BaseScene {
     this.speedTheta *= 1.0 - CAMERA_SPEED_FRICTION
     this.speedPhi *= 1.0 - CAMERA_SPEED_FRICTION
 
-    //    this.positionPhi += this.baseSpeedPhi + this.speedPhi
-    this.positionTheta += this.baseSpeedTheta + this.speedTheta
+    //    this.positionPhi +=  this.speedPhi
+    this.positionTheta += this.speedTheta
 
     this.thetaGroup.rotation.y = this.positionTheta
     this.phiGroup.rotation.x = this.positionPhi
