@@ -187,7 +187,7 @@ class Torus extends BaseScene {
 
     if (intersects.length > 0) {
       const { link } = intersects[0].object
-      console.log({ link })
+      document.location.href = link
     }
   }
 
