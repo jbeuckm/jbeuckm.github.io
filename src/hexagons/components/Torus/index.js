@@ -29,6 +29,7 @@ class Torus extends BaseScene {
 
     this.thetaGroup = new THREE.Group()
     this.phiGroup = new THREE.Group()
+    this.group = new THREE.Group()
 
     this.cameraPosX = 0
     this.cameraPosY = 0
@@ -65,7 +66,6 @@ class Torus extends BaseScene {
   }
 
   swipeHandler = event => {
-    console.log(event)
     this.speedTheta += 0.01 * event.overallVelocityX
   }
 
@@ -92,6 +92,7 @@ class Torus extends BaseScene {
         url,
         this.renderer
       )
+      mesh.link = thumbnail.link
       this.thetaGroup.add(mesh)
     })
   }
@@ -161,7 +162,6 @@ class Torus extends BaseScene {
 
     blogClient.Post.list().then(response => {
       const items = response.data().items
-      console.log({ items })
       this.handlePosts(items)
     })
 
@@ -172,6 +172,23 @@ class Torus extends BaseScene {
     this.scene.add(this.phiGroup)
 
     this.animate()
+  }
+
+  onDocumentMouseDown = event => {
+    event.preventDefault()
+
+    var mouse = new THREE.Vector2()
+    mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1
+    mouse.y = -(event.clientY / this.renderer.domElement.clientHeight) * 2 + 1
+
+    this.raycaster.setFromCamera(mouse, this.camera)
+
+    var intersects = this.raycaster.intersectObjects(this.thetaGroup.children)
+
+    if (intersects.length > 0) {
+      const { link } = intersects[0].object
+      console.log({ link })
+    }
   }
 
   updateCameraPosition = () => {

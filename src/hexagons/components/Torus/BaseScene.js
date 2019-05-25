@@ -81,12 +81,12 @@ class BaseScene extends Component {
 
     this.raycaster.setFromCamera(mouse, this.camera)
 
-    // var intersects = this.raycaster.intersectObjects(this.group.children)
+    var intersects = this.raycaster.intersectObjects(this.group.children)
 
-    // if (intersects.length > 0) {
-    //   const { postId } = intersects[0].object
-    //   console.log({ postId })
-    // }
+    if (intersects.length > 0) {
+      const { postId } = intersects[0].object
+      console.log({ postId })
+    }
   }
 
   animate = () => {
