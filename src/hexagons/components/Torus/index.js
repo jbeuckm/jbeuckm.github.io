@@ -35,7 +35,7 @@ class Torus extends BaseScene {
     this.cameraPosZ = 0
 
     this.positionTheta = Math.PI
-    this.positionPhi = Math.PI
+    this.positionPhi = Math.PI + 0.1
 
     this.speedTheta = 0
     this.speedPhi = 0
@@ -53,14 +53,14 @@ class Torus extends BaseScene {
         this.speedTheta += THETA_THROTTLE_DELTA
       },
 
-      ArrowUp: () => {
-        this.baseSpeedPhi = -0.001
-        this.speedPhi -= PHI_THROTTLE_DELTA
-      },
-      ArrowDown: () => {
-        this.baseSpeedPhi = 0.001
-        this.speedPhi += PHI_THROTTLE_DELTA
-      },
+      // ArrowUp: () => {
+      //   this.baseSpeedPhi = -0.001
+      //   this.speedPhi -= PHI_THROTTLE_DELTA
+      // },
+      // ArrowDown: () => {
+      //   this.baseSpeedPhi = 0.001
+      //   this.speedPhi += PHI_THROTTLE_DELTA
+      // },
     }
   }
 
@@ -173,7 +173,7 @@ class Torus extends BaseScene {
     this.speedTheta *= 1.0 - CAMERA_SPEED_FRICTION
     this.speedPhi *= 1.0 - CAMERA_SPEED_FRICTION
 
-    this.positionPhi += this.baseSpeedPhi + this.speedPhi
+    //    this.positionPhi += this.baseSpeedPhi + this.speedPhi
     this.positionTheta += this.baseSpeedTheta + this.speedTheta
 
     this.thetaGroup.rotation.y = this.positionTheta
