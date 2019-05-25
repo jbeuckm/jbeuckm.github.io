@@ -1,4 +1,5 @@
 import React from "react"
+import "./post.css"
 
 const styles = {
   container: {
