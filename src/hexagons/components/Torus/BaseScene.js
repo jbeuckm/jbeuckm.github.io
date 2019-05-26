@@ -47,16 +47,17 @@ class BaseScene extends Component {
     )
 
     window.addEventListener("resize", this.onDocumentResize)
-    document.addEventListener("mousedown", this.onDocumentMouseDown, false)
     document.addEventListener("keydown", this.onDocumentKeyDown)
 
     const Hammer = require("hammerjs")
 
-    var manager = new Hammer.Manager(this.renderer.domElement)
-    var Swipe = new Hammer.Swipe()
-    manager.add(Swipe)
+    var hammer = new Hammer(this.renderer.domElement)
+    hammer.on("swipe", this.swipeHandler)
+    hammer.on("tap", this.tapHandler)
+  }
 
-    manager.on("swipe", this.swipeHandler)
+  tapHandler = event => {
+    console.log("tap", { event })
   }
 
   onDocumentKeyDown = event => {
@@ -72,12 +73,13 @@ class BaseScene extends Component {
     this.camera.updateProjectionMatrix()
   }
 
-  onDocumentMouseDown = event => {
+  tapHandler = event => {
     event.preventDefault()
+    const { x: eventX, y: eventY } = event.center
 
     var mouse = new THREE.Vector2()
-    mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1
-    mouse.y = -(event.clientY / this.renderer.domElement.clientHeight) * 2 + 1
+    mouse.x = (eventX / this.renderer.domElement.clientWidth) * 2 - 1
+    mouse.y = -(eventY / this.renderer.domElement.clientHeight) * 2 + 1
 
     this.raycaster.setFromCamera(mouse, this.camera)
 

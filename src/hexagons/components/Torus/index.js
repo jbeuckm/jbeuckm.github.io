@@ -174,12 +174,12 @@ class Torus extends BaseScene {
     this.animate()
   }
 
-  onDocumentMouseDown = event => {
-    event.preventDefault()
+  tapHandler = event => {
+    const { x: eventX, y: eventY } = event.center
 
     var mouse = new THREE.Vector2()
-    mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1
-    mouse.y = -(event.clientY / this.renderer.domElement.clientHeight) * 2 + 1
+    mouse.x = (eventX / this.renderer.domElement.clientWidth) * 2 - 1
+    mouse.y = -(eventY / this.renderer.domElement.clientHeight) * 2 + 1
 
     this.raycaster.setFromCamera(mouse, this.camera)
 
