@@ -13,6 +13,4 @@ failedDownloads: []
 ### Failed hexagons:
 
 ### Hexagons images:
-![olia_typewritten.jpeg_hexagon.jpeg](olia_typewritten.jpeg_hexagon.jpeg)
- ![olia_typewritten-228x300.jpg_hexagon.jpeg](olia_typewritten-228x300.jpg_hexagon.jpeg)
  ![olia_typewritten.jpg_hexagon.jpeg](olia_typewritten.jpg_hexagon.jpeg)

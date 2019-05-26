@@ -13,6 +13,4 @@ failedDownloads: []
 ### Failed hexagons:
 
 ### Hexagons images:
-![ltrthgz.jpeg_hexagon.jpeg](ltrthgz.jpeg_hexagon.jpeg)
- ![ltrthgz-195x300.jpg_hexagon.jpeg](ltrthgz-195x300.jpg_hexagon.jpeg)
  ![ltrthgz.jpg_hexagon.jpeg](ltrthgz.jpg_hexagon.jpeg)

@@ -8,6 +8,7 @@ export default () => (
     <Helmet>
       <title>Joes Web Page</title>
       <link rel="apple-touch-icon" href="/homescreen_icon.png" />
+      <link rel="icon" sizes="192x192" href="/android_icon.png" />
     </Helmet>
 
     <TorusTiledWithHexagonImages />
