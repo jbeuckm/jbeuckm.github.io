@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import "./post.css"
 
 const styles = {
@@ -27,6 +28,11 @@ export default function Template({ data, pathContext: { prev, next } }) {
 
   return (
     <div style={styles.container}>
+      <Helmet>
+        <title>"{post.frontmatter.title}" - from Joe Beuckman</title>
+        <meta name="keywords" content={post.frontmatter.tags.join(", ")} />
+      </Helmet>
+
       <div style={styles.navLinks}>
         {prev && (
           <span style={styles.leftButton}>
@@ -41,10 +47,14 @@ export default function Template({ data, pathContext: { prev, next } }) {
       </div>
 
       <h1>{post.frontmatter.title}</h1>
-      <h3>{post.frontmatter.date}</h3>
-      <div>{post.frontmatter.tags.join(", ")}</div>
+      <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+      <dl>
+        {post.frontmatter.tags.map(tag => (
+          <dt key={tag}>{tag}</dt>
+        ))}
+      </dl>
 
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <article dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
   )
 }
