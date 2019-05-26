@@ -6,7 +6,6 @@ tags: []
 hexagonImages: ["dsc02355_0.jpg_hexagon.jpeg","dsc03820.jpg_hexagon.jpeg","dsc03819.jpg_hexagon.jpeg","dsc03845.jpg_hexagon.jpeg","dsc02355.jpg_hexagon.jpeg"]
 ---
 
- [![](dsc02355_0.jpg)](dsc02355_0.jpg)
 
 Last week I took a fun last-minute trip to watch the last launch of space shuttle Atlantis. On the plane, I sat next to super-nice-guy, marine biologist, and real-life treasure hunter Ken Hayes. He has astronauts for friends and had a VIP pass to Kennedy Space Center! He's interested in storytelling and shared several fascinating ones on the flight from Philly down to Orlando. After the launch, he was headed to the Keys to continue recovery efforts of the famous Spanish galleon [Atocha](http://en.wikipedia.org/wiki/Spanish_ship_Nuestra_Se%C3%B1ora_de_Atocha_%281620%29), lost at sea during hurricane season 1622. He showed me this handmade coin, which is worth about the same now as it was in the 1600's.
 

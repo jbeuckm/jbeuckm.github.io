@@ -13,7 +13,6 @@ failedDownloads: []
 ### Failed hexagons:
 
 ### Hexagons images:
-![dsc02355_0.jpg_hexagon.jpeg](dsc02355_0.jpg_hexagon.jpeg)
  ![dsc03820.jpg_hexagon.jpeg](dsc03820.jpg_hexagon.jpeg)
  ![dsc03819.jpg_hexagon.jpeg](dsc03819.jpg_hexagon.jpeg)
  ![dsc03845.jpg_hexagon.jpeg](dsc03845.jpg_hexagon.jpeg)
