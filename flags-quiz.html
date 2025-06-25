@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flag Quiz (With Score)</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; background: #f0f0f0; }
+    img { max-width: 200px; border: 1px solid #ccc; margin-bottom: 1rem; }
+    .options { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    button { padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; }
+    #result { margin-top: 1rem; font-weight: bold; }
+    #next-btn { margin-top: 1rem; }
+    #score { font-size: 1.2rem; margin-bottom: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🌍 Guess the Flag!</h1>
+  <div id="score">Score: 0 / 0</div>
+  <div id="quiz">
+    <img id="flag-img" src="" alt="Country flag" />
+    <div class="options" id="options"></div>
+    <div id="result"></div>
+    <button id="next-btn" style="display:none;">Next Flag</button>
+  </div>
+
+  <script>
+    let flags = [];
+    let asked = new Set();
+    let current;
+    let score = 0;
+    let total = 0;
+
+    const img = document.getElementById('flag-img');
+    const optionsDiv = document.getElementById('options');
+    const resultDiv = document.getElementById('result');
+    const nextBtn = document.getElementById('next-btn');
+    const scoreDisplay = document.getElementById('score');
+
+    function updateScore() {
+      scoreDisplay.textContent = `Score: ${score} / ${total}`;
+    }
+
+    function shuffle(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    function loadQuestion() {
+      resultDiv.textContent = '';
+      nextBtn.style.display = 'none';
+      optionsDiv.innerHTML = '';
+
+      if (asked.size >= flags.length) {
+        resultDiv.textContent = '🎉 You’ve gone through all flags!';
+        return;
+      }
+
+      do {
+        current = flags[Math.floor(Math.random() * flags.length)];
+      } while (asked.has(current.code));
+      asked.add(current.code);
+
+      img.src = `https://flagcdn.com/w320/${current.code}.png`;
+      img.alt = `Flag of ${current.name}`;
+
+      const wrong = shuffle(flags.filter(f => f.code !== current.code)).slice(0, 3);
+      const choices = shuffle([current, ...wrong]);
+
+      choices.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.textContent = opt.name;
+        btn.onclick = () => handleAnswer(opt.code === current.code);
+        optionsDiv.appendChild(btn);
+      });
+    }
+
+    function handleAnswer(correct) {
+      total++;
+      if (correct) {
+        score++;
+        resultDiv.textContent = `✅ Correct! It's ${current.name}.`;
+      } else {
+        resultDiv.textContent = `❌ Nope—that’s the flag of ${current.name}.`;
+      }
+      updateScore();
+      nextBtn.style.display = 'inline-block';
+      optionsDiv.querySelectorAll('button').forEach(b => b.disabled = true);
+    }
+
+    nextBtn.onclick = loadQuestion;
+
+    // Load flags
+    fetch('https://flagcdn.com/en/codes.json')
+      .then(res => res.json())
+      .then(data => {
+        flags = Object.entries(data).map(([code, name]) => ({ code, name }));
+        loadQuestion();
+      });
+  </script>
+</body>
+</html>
